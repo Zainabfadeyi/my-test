@@ -1,0 +1,254 @@
+.dashboard-container {
+    display: flex;
+    background-color: #000319;
+    width: 100%;
+    column-gap: 10px;
+  }
+  
+  .charts-container {
+    width: 100%;
+  }
+  
+  .charts-row {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+  }
+  
+  .chart-item {
+    flex: 1; /* Distributes space evenly between chart items */
+  }
+  
+  .bar-chart-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-container {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  
+    .charts-row {
+      flex-direction: column; /* Stack charts vertically */
+      column-gap: 0; /* Reset column gap */
+      align-items: center;
+
+    }
+  
+    .chart-item {
+      width: 50%; /* Ensure charts take full width */
+    }
+  
+    .bar-chart-container {
+      width: 100%; /* Ensure bar chart takes full width */
+      margin-top: 10px; /* Add some space between charts */
+      align-items: center;
+      justify-content: center;
+    
+    }
+  
+    .form-container {
+        width: 80%;
+        align-items: center;
+        justify-content: center ;
+      margin-top: 10px; /* Add some space between the form and the charts */
+    }
+  }
+
+  .barChartContainer {
+    height: 300px;
+    width: 720px;
+    background-color: #12193B;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #7b8bf4;
+    position: relative; /* Added for absolute positioning of legend */
+}
+
+.legend {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.legendItem {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    align-items: center;
+}
+
+.legendColor {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.tooltipText {
+    color: #ffffff; /* White text in tooltip */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .bar-chart-container{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+       
+    }
+  
+}
+
+@media (max-width: 768px) {
+  .barChartContainer {
+  align-items: center;
+   padding: 0;
+    height: 250px; 
+    width: 85%;
+  }
+}
+.pieChartContainer {
+    background-color: #12193B;
+    border-radius: 10px;
+    padding: 5px;
+   
+    border: 1px solid #7b8bf4;
+    position: relative;
+}
+
+.pieChartLegend {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.legendPieItem {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    
+}
+
+.legendPieColor {
+    width: 20px;
+    height: 20px;
+  
+}
+
+.pieChart {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    margin: 0 auto;
+    
+}
+
+.pieChartLabel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .pieChart {
+        height: 200px; /* Reduce the height for smaller screens */
+        width: 350px; /* Make the pie chart full width */
+    }
+
+    .pieChartContainer {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .legendPieItem {
+        font-size: 12px; /* Increase font size slightly for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .pieChart {
+        height: 150px; /* Further reduce the height for very small screens */
+    }
+
+    .pieChartLabel {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .legendPieItem {
+        font-size: 10px; /* Adjust legend font size for smaller screens */
+    }
+    .chart-pie-item{
+        align-items: flex-start;
+       
+    }
+}
+.lineChartContainer {
+    background-color: #12193B;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #7b8bf4;
+    position: relative;
+    height: 300px;
+    width: 350px;
+}
+
+.lineChartLegend {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.legendLineItem {
+    display: flex;
+    align-items: center;
+}
+
+.legendLineColor {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.lineChartLabel {
+    color: white;
+    
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chart-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+    }
+    .lineChartContainer {
+        height: 250px; 
+        width: 100%;
+    }
+
+    .lineChartLegend {
+        top: 10px; /* Adjust the legend position */
+        left: 40px;
+        gap: 5px; /* Reduce gap between legend items */
+    }
+}
+
+@media (max-width: 480px) {
+   
+}
