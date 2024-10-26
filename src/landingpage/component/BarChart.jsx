@@ -25,7 +25,7 @@ const BarChart = () => {
 
   return (
     <div className="barChartContainer">
-      <div>No. of Orders by City</div>
+      <div  style={{marginLeft:"10px"}}>No. of Orders by City</div>
       
       <ResponsiveBar
         data={data}

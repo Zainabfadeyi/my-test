@@ -192,6 +192,9 @@
     }
     .chart-pie-item{
         align-items: flex-start;
+        display: flex;
+        width: 93%;
+        margin-left: 23px;
        
     }
 }
