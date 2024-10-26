@@ -30,7 +30,7 @@ const PieChart = () => {
 
   return (
     <div className="pieChartContainer">
-      <div style={{marginBottom:"5px"}}>Revenue by City</div>
+      <div style={{marginBottom:"5px", color:"white"}}>Revenue by City</div>
       {/* Custom Legend */}
       {renderLegend()}
 

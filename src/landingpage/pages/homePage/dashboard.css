@@ -170,6 +170,7 @@
 
     .pieChartContainer {
         padding: 10px; /* Add padding for smaller screens */
+        width: 87%;
     }
 
     .legendPieItem {
