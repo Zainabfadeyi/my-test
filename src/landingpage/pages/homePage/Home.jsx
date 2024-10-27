@@ -5,11 +5,12 @@ import Data4 from "./Data4";
 import Data3 from "./Data3";
 import Data2 from "./Data2";
 import Dashboard from "./Dashboard";
+import '../../../layout/layout.css'
 
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <HeroSection >
         <Data1/>
         <Dashboard/>

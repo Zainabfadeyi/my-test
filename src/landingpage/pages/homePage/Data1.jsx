@@ -11,7 +11,7 @@ const Data1 = () => {
         </div>
         
         <h1 style={{fontSize:"50px", margin:"10px"}}>Xplora.io</h1>
-        <div className='textSection' style={{textAlign:"center", width:"20%",display:"flex", justifyContent:"center"}}
+        <div className='textSection' style={{textAlign:"center", width:"60%",display:"flex", justifyContent:"center"}}
         >Analyze your data, create your dashboard, and unite your team</div>
       </div>
   )

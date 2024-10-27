@@ -1,6 +1,11 @@
-@media screen and (max-width: 786px) {
+.hero_section{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 990px) {
     .hero_section{
-        width:0%;
-        padding: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
   }
