@@ -1,5 +1,6 @@
 import React from "react";
 import { generateFakeData } from "./data";
+import '../pages/homePage/dashboard.css'
 const Form = () => {
     const fakeData = generateFakeData(12); // Generate 12 entries
   
