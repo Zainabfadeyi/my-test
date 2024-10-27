@@ -165,7 +165,7 @@
 @media (max-width: 768px) {
     .pieChart {
         height: 200px; /* Reduce the height for smaller screens */
-        width: 350px; /* Make the pie chart full width */
+        width: 360px; /* Make the pie chart full width */
     }
 
     .pieChartContainer {
@@ -184,6 +184,7 @@
 @media (max-width: 480px) {
     .pieChart {
         height: 150px; /* Further reduce the height for very small screens */
+        width: 300px;
     }
 
     .pieChartLabel {
