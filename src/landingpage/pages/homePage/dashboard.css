@@ -171,6 +171,9 @@
     .pieChartContainer {
         padding: 10px; /* Add padding for smaller screens */
         width: 82%;
+        height: 250px; /* Reduce the height for smaller screens */
+        padding-bottom: -10px;
+        
     }
 
     .legendPieItem {
@@ -254,6 +257,18 @@
     }
 }
 
-@media (max-width: 480px) {
-   
+
+.formPage{
+    color: white;
+    background-color: #12193B;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #7b8bf4;
+    width: 102.5%;
+    
+}
+@media (max-width: 786px) {
+   .formPage{
+    margin-left: -10px;
+   }
 }

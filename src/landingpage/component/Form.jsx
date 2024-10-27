@@ -4,11 +4,8 @@ const Form = () => {
     const fakeData = generateFakeData(12); // Generate 12 entries
   
     return (
-        <div style={{color:'white', backgroundColor:"#12193B",
-            borderRadius:"10px",
-      padding:"5px",
-    color:"white",border:"1px solid #7b8bf4"
-        }}>
+        <div className="formPage"
+        >
              <div style={{display:"flex",width:"100%", 
              borderBottom:"0.5px solid #f5f5f5",alignItems:"center",
                 fontSize:"12px", justifyContent:"space-between"}}>
