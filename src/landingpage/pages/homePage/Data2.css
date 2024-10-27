@@ -42,7 +42,7 @@
     padding: 7px 20px  7px 20px ;
     margin-top: 40px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .icons, .icons2{
         flex-direction: column;
         row-gap: 15px; /* Adjust spacing between icons vertically */
@@ -82,7 +82,7 @@
     height: 160px;
     border-radius: 15px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .pics-row2 {
     display: none; /* Hide the second row on small screens */
   }
@@ -154,7 +154,7 @@ padding-right: 65px;
         align-items: center;
         padding-left: 39px;
     }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .data2 {
       flex-direction: column; /* Stack the items vertically */
       align-items: center;

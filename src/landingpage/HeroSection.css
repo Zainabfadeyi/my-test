@@ -1,0 +1,6 @@
+@media screen and (max-width: 786px) {
+    .hero_section{
+        width:0%;
+        padding: 70px;
+    }
+  }

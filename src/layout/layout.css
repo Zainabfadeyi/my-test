@@ -1,0 +1,13 @@
+.layout{
+    display: flex;
+    justify-content: center;
+    background-color: #000319;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 786px) {
+    .layout{
+        width: 77.5%;
+        padding:  0px 10px  0px 0px;
+    }
+  }
