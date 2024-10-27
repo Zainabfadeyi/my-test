@@ -45,7 +45,7 @@ export const generateChartData = () => {
     ];
   };
   export const generateCityBarData = () => {
-    const months = ['July', 'August', 'September', 'October', 'November', 'December'];
+    const months = ['Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
     const cities = ['Lagos', 'Benin', 'Abuja', 'Niger'];
   
     // Create data for each month with values for each city

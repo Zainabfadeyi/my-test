@@ -16,12 +16,7 @@ const BarChart = () => {
     console.log('Generated city bar data:', data);
   }, [data]);
 
-  const cities = [
-    { name: 'Lagos', color: '#ff0000' }, // Replace with your desired colors
-    { name: 'Benin', color: '#00ff00' },
-    { name: 'Abuja', color: '#0000ff' },
-    { name: 'Niger', color: '#ffff00' },
-  ];
+ 
 
   return (
     <div className="barChartContainer">
@@ -31,7 +26,7 @@ const BarChart = () => {
         data={data}
         keys={['Lagos', 'Benin', 'Abuja', 'Niger']} // Specify the city keys
         indexBy="month" // Use month as the index
-        margin={{ top: 20, right: 60, bottom: 50, left: 90 }}
+        margin={{ top: 20, right: 30, bottom: 50, left: 50 }}
         padding={0.3} // Adjusted padding for spacing
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
@@ -39,26 +34,7 @@ const BarChart = () => {
         borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
 
         // Set x-axis properties with white fill for text
-        axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          legend: 'Months',
-          legendPosition: 'middle',
-          legendOffset: 32,
-          tickTextColor: '#ffffff', // White fill for x-axis text
-        }}
-
-        // Set y-axis properties with white fill for text
-        axisLeft={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
-          legend: 'Value',
-          legendPosition: 'middle',
-          legendOffset: -40,
-          tickTextColor: '#ffffff', // White fill for y-axis text
-        }}
+     
 
         enableLabel={false} // Disable labels inside bars
         

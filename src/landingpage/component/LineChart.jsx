@@ -11,7 +11,7 @@ const LineChart = () => {
       <div style={{marginBottom:"10px"}} className="lineChartLabel">User SignUps</div>
       <ResponsiveLine
         data={chartData}
-        margin={{ top: 50, right: 20, bottom: 50, left: 40 }} // Adjust top margin to fit labels
+        margin={{ top: 30, right: 20, bottom: 50, left: 40 }} // Adjust top margin to fit labels
         xScale={{ type: 'point' }}
         yScale={{
           type: 'linear',
@@ -57,6 +57,22 @@ const LineChart = () => {
             itemTextColor: '#ffffff', // Text color for legend items
           },
         ]}
+        theme={{
+          textColor: '#ffffff', // Set all text to white
+          axis: {
+            ticks: {
+              line: {
+                stroke: '#ffffff', // Tick marks in white
+              },
+              text: {
+                fill: '#ffffff', // Tick text in white
+              },
+            },
+          },
+         
+        }}
+      
+        
       />
       
     </div>
