@@ -11,7 +11,7 @@ const LineChart = () => {
       <div style={{marginBottom:"10px"}} className="lineChartLabel">User SignUps</div>
       <ResponsiveLine
         data={chartData}
-        margin={{ top: 30, right: 20, bottom: 50, left: 40 }} // Adjust top margin to fit labels
+        margin={{ top: 30, right: 20, bottom: 60, left: 40 }} // Adjust top margin to fit labels
         xScale={{ type: 'point' }}
         yScale={{
           type: 'linear',
