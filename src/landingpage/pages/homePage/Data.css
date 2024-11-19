@@ -5,17 +5,19 @@
     align-items: center;
     background-color: #000319;
     color: white;
+    
+   
  
    
 }
 .homefour{
     width: 100%;
-    min-height: 100vh; /* Ensures it takes the full height of the viewport */
     display: flex;
     align-items: center;
     background-color: #000319;
     color: white;
     flex-direction: column;
+     margin-top: 90px;
 }
 
 
@@ -27,7 +29,7 @@
     max-width: 600px; /* Optional: to limit the width for a centered look */
     width: 100%;
     font-size: 12px;
-    margin: 60px 10px  60px 10px ;
+    margin: 10px 10px  60px 10px ;
     align-items: flex-end;
 
 }
@@ -39,7 +41,7 @@
     max-width: 600px; /* Optional: to limit the width for a centered look */
     width: 100%;
     font-size: 12px;
-    margin: 60px 10px  60px 10px ;
+    margin: 10px 10px  60px 10px ;
     align-items: flex-start;
 
 }
@@ -47,11 +49,18 @@
     /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
+    height: 190px;
     width: 50%;
     padding: 20px;
     background-color: #040828;
     border-radius: 10px;
     box-shadow: #040828;
+    justify-content: center;
+}
+.notes{
+    font-size: 14px;
+    margin-top: 6px;
+
 }
 @media (max-width: 1024px) {
     .objFourContain {

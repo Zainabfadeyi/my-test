@@ -44,10 +44,7 @@ const Navbar = () => {
            
               
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <div style={{display:"flex", 
-                border:"1px solid white",
-                 borderRadius:"20px",
-                 }}>
+              <div style={{display:"flex"}}>
               <div className="nav-links">About </div>
                 <div className="nav-links">Blog</div>
                 <div className="nav-links">Support</div>

@@ -6,6 +6,7 @@ import Data3 from "./Data3";
 import Data2 from "./Data2";
 import Dashboard from "./Dashboard";
 import '../../../layout/layout.css'
+import HomeObjFour from "./Data";
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
         <Data2/>
         <Data3/>
         <Data4/>
-        <omeObjFour />
+        <HomeObjFour />
       </HeroSection>
     </div>
   );

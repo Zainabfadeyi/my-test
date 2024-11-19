@@ -6,14 +6,11 @@
     flex-direction: column;
 }
 .home{
-    
-    padding: 10px;
 
 }
 @media screen and (max-width: 990px) {
     .layout{
-        /* width: 90%; */
-        padding:  0px 10px  0px 0px;
+
     }
     .home{
     width: 100%;

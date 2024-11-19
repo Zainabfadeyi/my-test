@@ -21,7 +21,7 @@ const BarChart = () => {
   return (
     <div className="barChartContainer">
       <div  style={{marginLeft:"10px"}}>No. of Orders by City</div>
-      
+      <div className="barWrapper">
       <ResponsiveBar
         data={data}
         keys={['Lagos', 'Benin', 'Abuja', 'Niger']} // Specify the city keys
@@ -62,6 +62,7 @@ const BarChart = () => {
           },
         }}
       />
+      </div>
     </div>
   );
 };

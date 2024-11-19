@@ -9,9 +9,10 @@ const LineChart = () => {
   return (
     <div className="lineChartContainer">
       <div style={{marginBottom:"10px"}} className="lineChartLabel">User SignUps</div>
+      <div className="chartWrapper">
       <ResponsiveLine
         data={chartData}
-        margin={{ top: 30, right: 20, bottom: 60, left: 40 }} // Adjust top margin to fit labels
+        margin={{ top: 30, right: 20, bottom: 30, left: 40 }} // Adjust top margin to fit labels
         xScale={{ type: 'point' }}
         yScale={{
           type: 'linear',
@@ -20,6 +21,7 @@ const LineChart = () => {
           stacked: false,
           reverse: false,
         }}
+        
         axisTop={null}
         axisRight={null}
        
@@ -74,6 +76,7 @@ const LineChart = () => {
       
         
       />
+      </div>
       
     </div>
   );

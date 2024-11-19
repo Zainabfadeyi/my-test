@@ -103,14 +103,14 @@
       opacity: 1;
       transition: all 0.6s ease;
       z-index: 1;
-      width: 88%;
+      width: 87%;
       
       
     }
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+    
       width: 100%;
       display: table;
     }

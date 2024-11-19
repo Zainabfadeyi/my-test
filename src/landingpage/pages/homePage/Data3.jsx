@@ -20,13 +20,12 @@ const Data3 = () => {
         <div className='pic' >
             <div className='pics-row1'>
             <img className='imgs' src='/pic/pic7.png' alt='Profile'  />
-            
             <img className='imgs' src='/pic/pic2.png' alt='Profile' />
             <img className='imgs' src='/pic/pic3.png' alt='Profile'  />
-            <img className='imgs' src='/pic/pic4.png' alt='Profile'/>
+            <img className='imgs'  src='/pic/pic1.png' alt='Profile' />
             </div>
             <div className='pics-row2'>
-            <img className='imgs2' src='/pic/pic1.png' alt='Profile' />
+            <img className='imgs2'src='/pic/pic4.png' alt='Profile'/>
             <img className='imgs3' src='/pic/pic5.png' alt='Profile'/>
             <img className='imgs2' src='/pic/pic6.png' alt='Profile'  />
 

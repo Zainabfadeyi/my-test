@@ -42,7 +42,7 @@ const PieChart = () => {
             value: Math.round(city.value), // Round the value to whole numbers
             color: city.color, // Ensure the color is retained in data
           }))}
-          margin={{ top: 0, right: 80, bottom: 0, left: 80 }}
+          margin={{ top: 20, right: 80, bottom: 0, left: 80 }}
           innerRadius={0.6} // Set inner radius for a donut chart
           padAngle={0.7}
           cornerRadius={3}

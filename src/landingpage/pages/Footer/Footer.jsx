@@ -9,7 +9,7 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
-import { MdFingerprint } from "react-icons/md";
+
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosPhonePortrait } from "react-icons/io";
 
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Fingertipe</h2>
+            <h2>Fingertip</h2>
             <Link to="/sign-up">How it works</Link>
             <Link to="/">Testimonials</Link>
             <Link to="/">Careers</Link>
@@ -49,14 +49,14 @@ const Footer = () => {
       <section className="social-media">
         <div className="social-media-wrap">
             
-            <div 
+            <div  style={{fontSize:"13px", width:"100%"}}
             >
                <IoLocationOutline />
                7480 Mockingbird Hill undefined 
             </div>
         
         
-            <div style={{marginTop:"10px", marginBottom:"15px"}}>
+            <div style={{marginTop:"10px", marginBottom:"15px", fontSize:"14px"}}>
                <IoIosPhonePortrait />
                (239) 555-0108
             </div>

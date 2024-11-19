@@ -18,7 +18,7 @@ const HomeObjFour = () => {
                         <div>Designer</div>
                         </div>
                     </div>
-                    <div>
+                    <div className='notes'>
                     Slate helps you see how many more days 
                     you need to work to reach your financial 
                     goal for the month and year. Slate helps 
@@ -38,7 +38,7 @@ const HomeObjFour = () => {
                         <div>Designer</div>
                         </div>
                     </div>
-                    <div>
+                    <div className='notes'>
                     Slate helps you see how many more days 
                     you need to work to reach your financial 
                     goal for the month and year. Slate helps 
@@ -62,7 +62,7 @@ const HomeObjFour = () => {
                         <div>Designer</div>
                         </div>
                     </div>
-                    <div>
+                    <div className='notes'>
                     Slate helps you see how many more days 
                     you need to work to reach your financial 
                     goal for the month and year. Slate helps 
@@ -82,7 +82,7 @@ const HomeObjFour = () => {
                         <div>Designer</div>
                         </div>
                         </div>
-                    <div>
+                    <div className='notes'>
                     Slate helps you see how many more days 
                     you need to work to reach your financial 
                     goal for the month and year. Slate helps 

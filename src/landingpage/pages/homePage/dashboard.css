@@ -2,46 +2,44 @@
     display: flex;
     background-color: #000319;
     width: 100%;
+    margin-top: 40px;
     column-gap: 10px;
+    margin-bottom: 50px;
   }
   
   .charts-container {
-    width: 100%;
+    width: 70%;
   }
   
   .charts-row {
     display: flex;
     width: 100%;
     column-gap: 10px;
+
   }
-  
   .chart-item {
-    flex: 1; /* Distributes space evenly between chart items */
-  }
+    width: 100%;
+}
+  
+  
   
   .bar-chart-container {
     width: 100%;
     margin-top: 20px;
   }
+  .barWrapper{
+    height: 270px;
+  }
   
   .form-container {
-    width: 100%;
+ 
+    width: 30%;
   }
   @media (max-width: 768px) {
-    .dashboard-container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-    }
-  
-    .charts-row {
-      flex-direction: column; /* Stack charts vertically */
-      column-gap: 0; /* Reset column gap */
-      align-items: center;
 
-    }
-  
     .chart-item {
-      width: 50%; /* Ensure charts take full width */
+        width: 100%;
+    
     }
   
     .bar-chart-container {
@@ -51,25 +49,18 @@
       justify-content: center;
     
     }
-  
-    .form-container {
-        width: 80%;
-        align-items: center;
-        justify-content: center ;
-      margin-top: 10px; /* Add some space between the form and the charts */
-    }
   }
 
+
   .barChartContainer {
-    height: 300px;
-    width: 720px;
     background-color: #12193B;
     color: white;
     border-radius: 10px;
     padding: 5px;
     border: 1px solid #7b8bf4;
-    position: relative; /* Added for absolute positioning of legend */
+    position: relative; 
 }
+
 
 .legend {
     position: absolute;
@@ -78,6 +69,7 @@
     right: 0;
     text-align: center;
 }
+
 
 .legendItem {
     display: inline-block;
@@ -106,24 +98,25 @@
         justify-content: center; 
        
     }
+    
+  .barChartContainer {
+    align-items: center;
+     padding: 0;
+      height: 100%; 
+      width: 100%;
+    }
   
 }
 
-@media (max-width: 768px) {
-  .barChartContainer {
-  align-items: center;
-   padding: 0;
-    height: 270px; 
-    width: 85%;
-  }
-}
+
 .pieChartContainer {
     background-color: #12193B;
     border-radius: 10px;
     padding: 5px;
-   
     border: 1px solid #7b8bf4;
     position: relative;
+    height: 100%;
+
 }
 
 .pieChartLegend {
@@ -142,75 +135,119 @@
 
 .legendPieColor {
     width: 20px;
-    height: 20px;
+
   
 }
 
 .pieChart {
-    position: relative;
-    height: 250px;
-    width: 350px;
-    margin: 0 auto;
+    
+    height: 170px;
+    width: 95%;
     
 }
 
 .pieChartLabel {
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
-@media (max-width: 768px) {
-    .pieChart {
-        height: 200px; /* Reduce the height for smaller screens */
-        width: 360px; /* Make the pie chart full width */
-    }
 
-    .pieChartContainer {
-        padding: 10px; /* Add padding for smaller screens */
-        width: 82%;
-        height: 250px; /* Reduce the height for smaller screens */
-        padding-bottom: -10px;
-        
-    }
+@media (max-width: 768px) {
 
     .legendPieItem {
-        font-size: 12px; /* Increase font size slightly for readability */
+        font-size: 12px; 
     }
 }
 
 @media (max-width: 480px) {
-    .pieChart {
-        height: 150px; /* Further reduce the height for very small screens */
-        width: 300px;
-    }
 
-    .pieChartLabel {
-        font-size: 20px; /* Decrease font size for smaller screens */
-    }
 
     .legendPieItem {
         font-size: 10px; /* Adjust legend font size for smaller screens */
     }
     .chart-pie-item{
-        align-items: flex-start;
-        display: flex;
-        width: 98%;
-        margin-left: 50px;
-        margin-top: 10px;
-       
+      
+    width: 100%;   
     }
 }
+.chart-pie-item{
+      
+    width: 100%;   
+    }
+
+    @media (max-width: 480px) {
+        .dashboard-container {
+            display: flex;
+            background-color: #000319;
+            width: 90%;
+            margin-top: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 19px;
+          }
+          
+    
+        .chart-item {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .charts-row{
+            display: flex;
+            flex-direction: column;
+        }
+      
+        .bar-chart-container {
+          width: 100%; /* Ensure bar chart takes full width */
+          margin-top: 10px; /* Add some space between charts */
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+        
+        }
+        .form-container{
+            width: 100%;
+        }
+        .chartWrapper{
+            width: 100px;
+        }
+    
+        .charts-container{
+            width: 100%;
+        }
+        .pieChart{
+            margin-bottom: 15px;
+        }
+        .pieChartLabel {
+            position: absolute;
+            top: 54%;
+            left: 48%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+      }
 .lineChartContainer {
     background-color: #12193B;
     border-radius: 10px;
     padding: 5px;
     border: 1px solid #7b8bf4;
-    position: relative;
-    height: 310px;
-    width: 350px;
+    height: 100%; 
+    margin: 0;
+
+
+}
+.chartWrapper {
+    margin: 0 ;
+    padding: 0; 
+    height: 200px; 
+    width: 93%;
+    display: flex;
+
 }
 
 .lineChartLegend {
@@ -219,12 +256,6 @@
     left: 60px;
     display: flex;
     gap: 10px;
-}
-
-
-.legendLineItem {
-    display: flex;
-    align-items: center;
 }
 
 .legendLineColor {
@@ -244,10 +275,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 85%;
+       
     }
     .lineChartContainer {
-        height: 250px; 
+        height: auto; 
         width: 100%;
     }
 
@@ -263,13 +294,66 @@
     color: white;
     background-color: #12193B;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #7b8bf4;
     
     
 }
-@media (max-width: 786px) {
-   .formPage{
-    margin-left: -10px;
-   }
+
+.form-header {
+    display: flex;
+    border-bottom: 0.5px solid #f5f5f5;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
 }
+
+.view-all-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: black;
+}
+
+.form-subheader {
+    display: flex;
+  
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.customer-row {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0px 5px;
+}
+
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.customer-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 11px;
+}
+
+.customer-email {
+    font-size: 10px;
+}
+
+
